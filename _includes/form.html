@@ -1,0 +1,34 @@
+<form>
+  <label>Name
+    <span class="small">Enter your name</span>
+  </label>
+  <input type="text" name="name" id="name">
+
+  <label>Email
+    <span class="small">Enter a valid email</span>
+  </label>
+  <input type="text" name="email" id="email">
+
+  <label>Phone Number
+    <span class="small">Enter your phone number</span>
+  </label>
+  <input type="text" name="phone" id="phone">
+
+  <label>Property
+    <span class="small">Select a property from the list</span>
+  </label>
+  <select name="property" id="property">
+    {% for node in site.pages %}
+      {% if node.property %}
+        <option value="{{node.primary}}">{{node.title}}</option>
+      {% endif %}
+    {% endfor %}
+  </select>
+
+  <label>Message
+    <span class="small">Anything else?</span>
+  </label>
+  <textarea name="message" id="message" cols="1" rows="1"></textarea>
+
+  <button type="button" id="submit">Submit</button>
+</form>

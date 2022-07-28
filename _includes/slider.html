@@ -1,0 +1,45 @@
+<!-- ### The <FEATURED> ### -->
+<div id="featured">
+
+  <div class="container">
+    <!-- ### Left Arrow for Previous products ### -->
+    <div class="featured-arrow" id="stripNavL0">
+      <a href="#" title="Previous" class="tooltip"><img src="images/featured-arrow-left.png" alt="" width="38" height="41" /></a>
+    </div>
+
+    <!-- ### The slider ### -->
+    <div id="slider">
+      <div class="slider-wrap">
+        <div id="sliderc" class="csw">
+          <div class="panelContainer">
+
+            {% for node in site.pages %}
+    				{% unless node.exclude %}
+            <div class="panel">
+              <div class="projectImage">
+                <img src="{{node.sliderImage}}" alt="{{node.title}}" width="410" height="183" />
+              </div>
+              <div class="projectDescription">
+                <h1>{{node.title}}</h1>
+                <p>{{node.sliderDescription}}</p>
+                {% if node.property %}
+                  <a href="{{node.url}}" class="viewProduct"></a>
+        				{% else %}
+                  <a href="{{node.url}}" class="contactus"></a>
+        				{% endif %}
+              </div>
+            </div>
+    				{% endunless %}
+    				{% endfor %}
+
+          </div><!-- .panelContainer -->
+        </div><!-- #slider1 -->
+      </div><!-- .slider-wrap -->
+    </div>
+
+    <!-- ### Right Arrow for Next products ### -->
+    <div class="featured-arrow" id="stripNavR0">
+      <a href="#" title="Next" class="tooltip"><img src="images/featured-arrow-right.png" alt="" width="38" height="41" /></a>
+    </div>
+  </div>
+</div>

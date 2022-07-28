@@ -1,0 +1,58 @@
+* html #navigation ul li.navhover {
+	background: #223e59;
+}
+
+* html div#content div.container { padding-top: 25px; }
+
+* html div.gallery a img {
+	background: #ffffff;
+	border: 1px solid #777;
+	padding: 4px; margin: 2px;
+	width: 90px; height: 90px;
+}
+
+* html div#content h1 {
+	font-family: Calibri, Verdana, Tahoma;
+	font-size: 32px;
+	color: #245888;
+	letter-spacing: -1.5px;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 7px 0px;
+	background: url(../images/divider.png) bottom left no-repeat;
+	font-weight: normal;
+}
+
+* html div#content h2 {
+	font-family: Georgia, "Times New Roman";
+	font-size: 21px;
+	color: #245888;
+	letter-spacing: -1.5px;
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 5px 0px;
+}
+
+
+* html #TB_HideSelect { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+
+* html #TB_load { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+
+* html #TB_overlay { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+* html #TB_window { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+
+* html #submit { position: relative; margin-top: -30px; }

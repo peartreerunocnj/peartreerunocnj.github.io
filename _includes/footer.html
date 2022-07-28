@@ -1,0 +1,21 @@
+<div id="footer">
+	<div class="container">
+		<div class="footerLogo">
+			<a href="{{ "/" | relative_url }}" title="{{ site.title }}">
+				<img src="images/logoFooter.png" alt="Our Comapny" width="225" height="45" />
+			</a>
+		</div>
+		<div class="footerLinks marginTop">
+			{% for node in site.pages %}
+			{% unless node.exclude %}
+			{% if page.url == node.url %}
+			<a href="{{node.url}}" title="{{node.title}}" class="current">{{node.title}}</a>
+			{% else %}
+			<a href="{{node.url}}" title="{{node.title}}">{{node.title}}</a>
+			{% endif %}
+			{% endunless %}
+			{% endfor %}
+		</div>
+		<p>©{{ 'now' | date: "%Y" }} Pear Tree Run LLC. All rights reserved. Valid <a href="http://validator.w3.org/check?uri=referer" class="validated">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer" class="validated">CSS</a></p>
+	</div>
+</div>

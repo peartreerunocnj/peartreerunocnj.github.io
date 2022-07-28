@@ -1,0 +1,30 @@
+<div id="header">
+	<div class="container">
+		<div class="logo">
+			<a href="{{ "/" | relative_url }}" title="{{ site.title }}">
+				<img src="images/logo.png" width="395" height="90" alt="Pear Tree Run" />
+			</a>
+		</div>
+		<div id="navigation">
+			<ul>
+				{% for node in site.pages %}
+				{% unless node.exclude %}
+				{% if page.url == node.url %}
+				<li class="current">
+				{% else %}
+				<li>
+				{% endif %}
+					<a href="{{node.url}}" title="{{node.title}}">
+						{{node.primary}}
+						<div>
+							{{node.secondary}}<br />
+							{{node.tertiary}}
+						</div>
+					</a>
+				</li>
+				{% endunless %}
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>

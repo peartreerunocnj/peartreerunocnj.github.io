@@ -1,0 +1,2 @@
+gem "github-pages", "~> 227"
+gem "webrick", "~> 1.7"

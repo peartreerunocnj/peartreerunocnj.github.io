@@ -1,0 +1,22 @@
+*+html div#content h1 {
+	font-family: Calibri, Verdana, Tahoma;
+	font-size: 32px;
+	color: #245888;
+	letter-spacing: -1.5px;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 7px 0px;
+	background: url(../images/divider.png) bottom left no-repeat;
+	font-weight: normal;
+}
+
+
+*+html div#content div.container { padding-top: 25px; }
+
+*+html div#content h2 {
+	font-family: Georgia, "Times New Roman";
+	font-size: 21px;
+	color: #245888;
+	letter-spacing: -1.5px;
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 5px 0px;
+}
